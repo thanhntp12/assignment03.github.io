@@ -1,0 +1,199 @@
+.candong {
+  display: grid;
+  grid-template-columns: 45% 25% 25%;
+  grid-template-rows: 60% 40%;
+  background-color: antiquewhite;
+}
+.scopes {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+.timeline {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+}
+.goals,
+.scopes,
+.team,
+.primary,
+.timeline {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.candong h4 {
+  font-size: 20px;
+}
+.goals,
+.scopes {
+  margin-left: 35px;
+}
+.timeline {
+  margin-right: 35px;
+}
+.goals h5::before {
+  content: "🏁";
+  margin-right: 30px;
+}
+.goals h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(156, 154, 154, 0.427);
+}
+
+.goals p {
+  margin-left: 55px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(156, 154, 154, 0.427);
+}
+.Scope {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.scopes h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(156, 154, 154, 0.427);
+}
+.team h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(156, 154, 154, 0.427);
+}
+.team h4::before {
+  content: "👤";
+  margin-right: 20px;
+}
+.team p {
+  margin-left: 42px;
+}
+.timeline h2,
+.primary h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(156, 154, 154, 0.427);
+}
+.timeline p {
+  border-bottom: 2px dotted rgba(156, 154, 154, 0.427);
+  margin-left: 42px;
+  padding-bottom: 10px;
+}
+.timeline h5 {
+  border-radius: 50%;
+  border: 2px solid rgb(204, 93, 93);
+
+  background-color: rgb(217, 115, 149);
+  margin-right: 45px;
+  margin-top: 5px;
+  padding: 5% 5%;
+}
+.so {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.so p {
+  margin: 0;
+}
+.primary p::before {
+  content: " ? ";
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(204, 93, 93);
+  background-color: rgb(217, 115, 149);
+  padding: 0px 8px;
+  margin-left: -40px;
+  position: absolute;
+}
+.primary {
+  position: relative;
+}
+.primary p {
+  margin-left: 40px;
+}
+@media (max-width: 1280px) {
+  .candong {
+    display: flex;
+    flex-direction: column;
+  }
+  .goals,
+  .scopes,
+  .team,
+  .primary,
+  .timeline {
+    margin: 20px 30px;
+    position: relative;
+  }
+  .goals h5::before {
+    content: "🏁";
+    margin-right: 30px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -40px;
+  }
+  .goals h5 {
+    padding-top: 40px;
+    padding-left: 13%;
+  }
+  .Scope {
+    display: flex;
+    flex-direction: column;
+  }
+  .team h4::before {
+    content: "";
+  }
+  .team h4::after {
+    content: "👤";
+    margin-left: 2%;
+  }
+  .team h4 {
+    margin-left: 5%;
+  }
+  .primary p::before {
+    content: none;
+  }
+  .primary p::before {
+    content: " ? ";
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(204, 93, 93);
+    background-color: rgb(217, 115, 149);
+    position: absolute;
+    margin-top: -9%;
+    margin-left: 35%;
+  }
+
+  .primary p {
+    margin-top: 10%;
+    margin-left: 30px;
+  }
+  .so {
+    display: flex;
+    flex-direction: column;
+  }
+  .so h5 {
+    align-items: center;
+  }
+  .timeline h5 {
+    border-radius: 50%;
+    border: 2px solid rgb(204, 93, 93);
+
+    background-color: rgb(217, 115, 149);
+
+    margin-right: 90%;
+    margin-top: 5px;
+    padding: 2% 2%;
+  }
+}
+@media (min-width: 550px) and (max-width: 1280px) {
+  .timeline h5 {
+    border-radius: 50%;
+    border: 2px solid rgb(204, 93, 93);
+
+    background-color: rgb(217, 115, 149);
+
+    margin-right: 95%;
+
+    margin-top: 5px;
+    padding: 1% 1%;
+  }
+  .team h4::after {
+    content: "👤";
+    margin-left: 30%;
+  }
+}

@@ -1,0 +1,354 @@
+/* bìa */
+#banner {
+  position: relative; /* Thiết lập vị trí tương đối cho phần tử */
+  text-align: center; /* Để căn giữa phần chữ */
+}
+
+#banner img {
+  width: 100%; /* Đặt chiều rộng ảnh là 100% của phần tử cha */
+  height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ của ảnh gốc */
+  filter: brightness(60%); /* Điều chỉnh độ sáng của ảnh thành 60% */
+}
+
+.banner-text {
+  position: absolute; /* Thiết lập vị trí tuyệt đối cho phần tử */
+  top: 30%; /* Đặt vị trí từ phía trên 30% so với phần tử cha */
+  left: 50%; /* Đặt vị trí từ phía trái 50% so với phần tử cha */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Dịch chuyển phần tử con để căn giữa hoàn toàn */
+  color: white; /* Màu chữ trắng */
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.banner-text span {
+  font-size: 15px;
+}
+/* nav-bar */
+#nav-bar {
+  align-items: center;
+}
+
+.container0 {
+  display: flex; /* Thiết lập hiển thị kiểu flex cho phần tử */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+  padding: 20px;
+  border: 2px solid black;
+  margin-bottom: 40px;
+}
+.container0 img {
+  width: 100px; /* Đặt chiều rộng của ảnh */
+  height: 100px; /* Đặt chiều rộng của ảnh */
+  object-fit: cover; /* Điều chỉnh ảnh để vừa với kích thước đã đặt */
+  /* align-items: center; Căn giữa các phần tử con theo chiều dọc */
+}
+.h2 {
+  height: auto;
+  width: 100px;
+  display: flex;
+  flex-direction: column; /* Đặt hướng xếp các phần tử con là cột */
+  /* align-items: flex-start;   */
+  /* margin-right: 0px;
+  padding: 0px; */
+  border-left: 1px solid rgba(232, 232, 232, 0.529);
+  border-right: 1px solid rgba(232, 232, 232, 0.529);
+  position: absolute; /* Thiết lập vị trí tuyệt đối cho phần tử */
+  /* align-items: center; Căn giữa các phần tử con theo chiều dọc */
+  border-radius: 50%; /* Đặt góc bo tròn cho phần tử */
+  border: 5px solid rgb(227, 226, 226); /* Viền đậm cho phần tử */
+  overflow: hidden; /* Ẩn nội dung vượt ra ngoài khỏi phần tử */
+}
+
+.container0 a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới cho liên kết */
+  margin-right: 40px;
+  position: relative; /* Thiết lập vị trí tương đối cho liên kết */
+}
+.container0 a:hover::before {
+  /*phần tử giả tạo gạch chân khi nhấp chuột vào a*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(15, 121, 167);
+  bottom: -4px;
+  /* left: 0; */
+}
+.nav1 {
+  margin-left: 0px;
+}
+.nav2 {
+  margin-left: 200px;
+}
+
+/* mục tiêu nghề nghiệp, thông tin cá nhân */
+
+.bg-grey {
+  background-color: #f2f2f2;
+  padding: 40px 10%;
+}
+
+#target p {
+  line-height: 1.7; /* Đặt độ cao của dòng là 1.7 lần kích thước font */
+}
+.section-title {
+  text-transform: uppercase; /* Chuyển đổi chữ thành chữ hoa */
+  font-weight: bold; /* Đặt độ đậm của font là đậm */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+
+  padding-bottom: 10px; /* Khoảng cách dưới section title */
+  margin-bottom: 20px; /* Khoảng cách dưới section title */
+}
+
+#personal-info {
+  width: 100%;
+  padding-left: 50px;
+}
+
+.info {
+  list-style: none; /* Loại bỏ dấu đầu dòng */
+  padding: 0;
+}
+
+.info li {
+  margin-bottom: 5px; /* Khoảng cách giữa các dòng thông tin */
+
+  line-height: 1.5; /* Độ cao dòng */
+}
+.social-icons {
+  margin-top: 30px;
+}
+
+.hide {
+  display: none; /* Ẩn phần tử */
+}
+/* các kinh nghiệm   */
+
+.toolbox {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    75% 25%
+  ); /* Chia thành 2 cột với tỷ lệ 75% và 25% */
+}
+
+.toolbox i {
+  font-size: 35px; /* Đặt kích thước của biểu tượng là 35px */
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+  gap: 50px; /* Khoảng cách giữa các cột */
+  margin: 0 10%;
+}
+#job-info h1 {
+  margin-bottom: 30px;
+}
+#job-info h3 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+#job-info ul li {
+  list-style: none; /* Bỏ gạch đầu dòng cho mỗi item trong danh sách */
+}
+
+#job-info p {
+  font-style: italic; /* Đặt font chữ là italic */
+  margin-bottom: 10px;
+}
+.hobby {
+  display: inline-block; /* Hiển thị phần tử là khối inline */
+  margin: 10px;
+}
+.hobby i {
+  display: block; /* Hiển thị phần tử là khối block */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Tạo viền tròn */
+  background-color: white; /* Màu nền cho viền tròn */
+  border: 3px solid rgb(82, 181, 226); /* Đặt viền cho viền tròn */
+
+  text-align: center; /* Căn giữa nội dung theo chiều ngang */
+  line-height: 40px;
+  font-size: 24px;
+  color: black; /* Màu chữ */
+}
+.hobby p {
+  margin-top: 5px;
+}
+.chamtron h3::before {
+  content: "\2022"; /* Ký hiệu chấm tròn */
+  font-size: 25px;
+  color: rgb(80, 196, 227); /* Màu sắc của chấm tròn */
+  margin-right: 15px; /* Khoảng cách giữa chấm tròn và tiêu đề */
+}
+
+.vien p,
+ul {
+  margin-left: 20px; /* Để thụt lề so với tiêu đề h3 */
+}
+.hobbies p {
+  margin-left: 0;
+}
+.xanh {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.xam {
+  background: #8d979bc4;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.vien {
+  padding: 15px; /* Đặt khoảng cách giữa viền và nội dung là 15px */
+  border: 1px solid rgba(131, 131, 131, 0.69); /* Đặt viền cho phần tử */
+}
+.an {
+  display: none; /* Ẩn phần tử */
+}
+.control-view button {
+  display: none; /* Ẩn nút ban đầu */
+}
+
+.vien:hover .control-view button {
+  display: inline-block; /* Hiển thị nút khi hover vào container */
+}
+/* chứng chỉ giải thưởng */
+
+.container {
+  display: block; /*kiểu hiển thị block, chiếm toàn bộ không gian dòng*/
+  padding: 30px 50px;
+}
+.chungchi1 {
+  display: grid; /* thiết lập một phần tử HTML thành một lưới (grid) để sắp xếp và định dạng các phần tử con bên trong nó.*/
+  grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột bằng nhau */
+  margin-bottom: 30px;
+  padding: 0 7%;
+}
+#certificate img {
+  width: 270px;
+  height: auto;
+}
+.candong {
+  margin-left: 10px;
+}
+.Web {
+  display: flex;
+  flex-direction: row;
+}
+#certificate h2 {
+  font-size: 20px;
+}
+#certificate {
+  margin: 20px;
+  padding: 20px;
+}
+
+.data {
+  margin-bottom: 30px;
+  padding: 0 7%;
+  padding-top: 30px;
+
+  border-top: 1px solid grey;
+}
+.webfunix {
+  padding-right: 10px;
+  margin-right: 20px;
+  border-right: 1px solid grey;
+}
+
+/* dự án */
+
+.container4 h1 {
+  margin-top: 60px;
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Chia thành 3 cột bằng nhau */
+  margin: 0 10%;
+  gap: 1%; /* Khoảng cách giữa các ô lưới là 15px */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.nam {
+  display: grid;
+  grid-template-columns: 22% 38% 40%; /* Chia thành 3 cột bằng nhau */
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(131, 131, 131, 0.69);
+}
+.project th {
+  text-align: left; /* Căn trái nội dung văn bản trong th */
+  font-size: 18px;
+}
+.project tr {
+  border-bottom: 1px solid rgba(131, 131, 131, 0.69);
+}
+.project td {
+  width: 70%;
+}
+
+.vienduan {
+  margin-bottom: 0px;
+  border: 1px solid rgba(131, 131, 131, 0.69);
+  padding: 20px 10px;
+  padding-bottom: 5px;
+}
+
+.duan p:first-child {
+  background-color: rgb(82, 181, 226); /* Màu nền cho viền tròn */
+  width: 55px;
+  border-radius: 20%; /* Tạo viền tròn */
+  text-align: center;
+  font-size: 20px;
+  color: black; /* Màu chữ */
+}
+table {
+  width: 100%;
+  height: 300px;
+  border: 1px solid rgba(131, 131, 131, 0.69);
+}
+/* footer */
+#footer {
+  background-color: #f0f0f0;
+
+  margin: 30px;
+  padding: 1%;
+}
+
+.container3 ul {
+  display: flex; /* Sử dụng kiểu hiển thị flex cho danh sách ul */
+  list-style: none; /* Loại bỏ dấu đầu dòng cho danh sách ul */
+  flex-direction: row; /* hiển thị theo 1 hàng ngang*/
+  justify-content: center;
+}
+.container3 li {
+  margin-right: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.container3 i {
+  color: rgb(82, 181, 226);
+  font-size: 30px;
+}
+.container3 a {
+  text-decoration: none;
+}

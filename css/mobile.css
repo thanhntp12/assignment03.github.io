@@ -1,0 +1,67 @@
+@media (max-width: 550px) {
+  .h2 {
+    display: none;
+  }
+  .nav2,
+  .nav1 {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container0 {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #personal-info {
+    background-color: rgba(224, 220, 220, 0.41);
+    padding: 20px 10px;
+  }
+  .bg-grey {
+    padding-bottom: 0;
+  }
+  .container2 {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .chungchi1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .webfunix {
+    border-bottom: 1px solid grey;
+    border-right: none;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+  }
+  .duan {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .duan img {
+    width: 100%;
+  }
+  .duan h4 {
+    font-size: 3vw;
+  }
+  #target {
+    padding: 0;
+  }
+  #certificate {
+    margin: 0;
+    padding: 5%;
+  }
+  .container {
+    padding: 0;
+  }
+}
